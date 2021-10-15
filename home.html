@@ -5,16 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Chúc mừng ngày 20-11</title>
+    <style>
+        .input-group {
+            display: block;
+            margin-bottom: 30px;
+        }
+        
+        .input-group input {
+            width: 100% !important;
+        }
+        
+        .div-button {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .input-group button {
+            background-color: greenyellow;
+            border: 2px greenyellow solid;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <button id="123">Click</button>
+    <div class="container">
+        <div class="input-group div-button">
+            <h2>Bài Test đơn giản</h2>
+        </div>
+        <div class="input-group">
+            <label>Sinh Nhật Dũng</label>
+            <input type="date" class="form-control" name="sn1">
+        </div>
+        <div class="input-group">
+            <label>Sinh nhật Tuấn Anh</label>
+            <input type="date" class="form-control" name="sn2">
+        </div>
+        <div class="input-group">
+            <label>Sinh nhật Trọng</label>
+            <input type="date" class="form-control" name="sn3">
+        </div>
+        <div class="input-group div-button">
+            <button id="btn-submit">Tiếp tục</button>
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-    $('#123').on('click', function() {
-        window.location.href = "ascii-art.html";
+    $('#btn-submit').on('click', function() {
+        var sn1 = $("input[name='sn1']").val();
+        var sn2 = $("input[name='sn2']").val();
+        var sn3 = $("input[name='sn3']").val();
+        if (sn1 != '2001-01-09') {
+            alert('Đơn giản vậy cũng đoán sai :(');
+        } else if (sn2 != '2001-05-22') {
+            alert('Đơn giản vậy cũng đoán sai :(');
+        } else if (sn3 != '2001-10-15') {
+            alert('Đơn giản vậy cũng đoán sai :(');
+        } else {
+            window.location.href = "ascii-art.html";
+        }
     })
 </script>
 
