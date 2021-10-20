@@ -1,74 +1,151 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Chúc mừng ngày 20-11</title>
-    <style>
-        .input-group {
-            display: block;
-            margin-bottom: 30px;
-        }
-        
-        .input-group input {
-            width: 100% !important;
-        }
-        
-        .div-button {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .input-group button {
-            background-color: greenyellow;
-            border: 2px greenyellow solid;
-            border-radius: 10px;
-            padding: 5px 10px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="listimage.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="input-group div-button">
-            <h2>Bài Test đơn giản</h2>
+    <div class="parent">
+        <canvas id="canvas"></canvas>
+        <div class="above-fold">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5 d-flex justify-content-center">
+                        <div class="box">
+                            <div class="box-body">
+                                <div class="box-lid">
+
+                                    <div class="box-bowtie"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <label>Sinh Nhật Dũng</label>
-            <input type="date" class="form-control" name="sn1">
+
+        <div id="card1" class="card">
+            <h4>💘Team Four`💘</h4>
+            <h5 style="padding: 15px;
+            font-size: 15px;">
+                Nhân ngày 20-11, Chúng tôi - 3 chú ngự lâm hiền lành nhân hậu nên hay bị nửa kia bắt nạt, muốn gửi tới nửa kia (hơi nghiệp tý) những lời yêu thương nồng thắm nhất. Chúc các bạn ngày càng xinh đẹp, duyên dáng. Nghĩ tới cảnh chị em than phiền về cân nặng
+                mà niềm đam mê ăn uống thì cứ mãi là bất diệt nên ae tôi xin mạn phép được bonus thêm 1 câu “Chúc các bạn có thể ngày ngày ăn uống thoả thích mà không béo nhé”. Chúc đến đây thấy kẹt ý tưởng r nên ae mình kiếm được quả triết lý gửi gắm
+                tới các bạn: "Mỗi ai đó xuất hiện trong cuộc đời của bạn đều có lí do của nó", vậy cho nên đã gặp nhau, quen nhau, chơi với nhau rồi thì hãy nhớ nhau thật thật lâu và đừng bắt nạt những trái tim yếu đuối mỏng manh dễ thương này nhé. Cảm
+                ơn các bạn trong suốt mấy năm qua đã luôn quan tâm giúp đỡ bọn mình. Thực sự cảm ơn các bạn đã đến và làm bạn với bọn mình, làm cho cuộc sống này thêm nhiều ý nghĩa, cảm ơn. Mé sến sủa quá, thui kết đây.
+            </h5>
+            <h4>TEAM FOUR WITH LOVE ❤️</h4>
         </div>
-        <div class="input-group">
-            <label>Sinh nhật Tuấn Anh</label>
-            <input type="date" class="form-control" name="sn2">
+        <div id="card2" class="card">
+            <img src="images/_VMT5245.JPG" class="honey" />
         </div>
-        <div class="input-group">
-            <label>Sinh nhật Trọng</label>
-            <input type="date" class="form-control" name="sn3">
+        <div id="card3" class="card">
+            <img src="images/B612_20190527_094454_947.jpg" class="honey" />
         </div>
-        <div class="input-group div-button">
-            <button id="btn-submit">Tiếp tục</button>
+        <div id="card4" class="card">
+            <img src="images/KKV_4771.JPG" class="honey" />
+        </div>
+        <div id="card5" class="card">
+            <img src="images/KKV_4745.JPG" class="honey" />
+        </div>
+        <div id="card6" class="card">
+            <img src="images/NTM_6221.JPG" class="honey" />
+        </div>
+        <div id="card7" class="card">
+            <img src="images/NTM_6223.JPG" class="honey" />
+        </div>
+        <div id="card8" class="card">
+            <img src="images/NTM_6990.JPG" class="honey" />
+        </div>
+        <div id="card9" class="card">
+            <img src="images/KKV_5299.JPG" class="honey" />
+        </div>
+        <div id="card10" class="card">
+            <img src="images/IMG_0994.JPG" class="honey" />
+        </div>
+        <div id="card11" class="card">
+            <img src="images/IMG_0972.JPG" class="honey" />
+        </div>
+        <div id="card12" class="card">
+            <img src="images/B612_20190201_105949_349.jpg" class="honey" />
+        </div>
+        <div id="card13" class="card">
+            <img src="images/_VMT5253.JPG" class="honey" />
+        </div>
+        <div class="muiten">
+            <svg class="svg-left" width="80" height="80" viewBox="0 0 40 40"><g transform="scale(0.03125 0.03125)"><path d="M512 1024c282.77 0 512-229.23 512-512s-229.23-512-512-512-512 229.23-512 512 229.23 512 512 512zM512 96c229.75 0 416 186.25 416 416s-186.25 416-416 416-416-186.25-416-416 186.25-416 416-416z"></path><path d="M669.256 317.256l-90.512-90.512-285.254 285.256 285.256 285.254 90.508-90.508-194.744-194.746z"></path></g></svg>
+            <svg class="svg-right" width="80" height="80" viewBox="0 0 40 40"><g transform="scale(0.03125 0.03125)"><path d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 928c-229.75 0-416-186.25-416-416s186.25-416 416-416 416 186.25 416 416-186.25 416-416 416z"></path><path d="M354.744 706.744l90.512 90.512 285.254-285.256-285.256-285.254-90.508 90.508 194.744 194.746z"></path></g></svg>
         </div>
     </div>
 </body>
+<script src="canvas.js"></script>
+<script src="present.js"></script>
+<script src="listimage.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-    $('#btn-submit').on('click', function() {
-        var sn1 = $("input[name='sn1']").val();
-        var sn2 = $("input[name='sn2']").val();
-        var sn3 = $("input[name='sn3']").val();
-        if (sn1 != '2001-01-09') {
-            alert('Đơn giản vậy cũng đoán sai :(');
-        } else if (sn2 != '2001-05-22') {
-            alert('Đơn giản vậy cũng đoán sai :(');
-        } else if (sn3 != '2001-10-15') {
-            alert('Đơn giản vậy cũng đoán sai :(');
+    var nummax = 13;
+    $(".above-fold").on('click', function() {
+        $(this).css({
+            'z-index': 0
+        });
+        $('.card').css({
+            'transition': 'all 2s'
+        })
+        $('svg').addClass("svg-show");
+        $(".box-body").addClass('box-body-hover');
+        $("#card1").addClass("card-show");
+    });
+    $('svg').on('click', function() {
+        if ($(this).hasClass('svg-left')) {
+            $('.card').each(function() {
+                if ($(this).hasClass("card-show")) {
+                    if (Number($(this).attr('id').slice(-2))) {
+                        var num = Number($(this).attr('id').slice(-2));
+                    } else {
+                        var num = Number($(this).attr('id').slice(-1));
+                    }
+                    if (num == 1) {
+                        num = nummax;
+                    } else {
+                        num--;
+                    }
+                    var id = '#card' + num;
+                    console.log(id);
+                    $(this).removeClass("card-show");
+                    $(id).addClass("card-show");
+                    return false;
+                }
+            });
         } else {
-            window.location.href = "ascii-art.html";
+            $('.card').each(function(index, ele) {
+                if ($(this).hasClass("card-show")) {
+                    if (Number($(this).attr('id').slice(-2))) {
+                        var num = Number($(this).attr('id').slice(-2));
+                    } else {
+                        var num = Number($(this).attr('id').slice(-1));
+                    }
+                    if (num == nummax) {
+                        num = 1;
+                    } else {
+                        num++;
+                    }
+                    var id = '#card' + num;
+                    console.log(id);
+                    $(this).removeClass("card-show");
+                    $(id).addClass("card-show");
+                    return false;
+                }
+            });
         }
-    })
+    });
 </script>
 
 </html>
