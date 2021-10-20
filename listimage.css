@@ -4,12 +4,13 @@ svg:hover {
 
 svg {
     opacity: 0;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .svg-show {
     opacity: 0.5;
     transition: all 2s;
+    cursor: pointer;
 }
 
 .muiten {
